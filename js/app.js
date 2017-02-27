@@ -3,9 +3,9 @@ $(document).ready(function() {
   // all code to manipulate the DOM
   // goes inside this function
 var mark = function(numClicks,box){
-     if (numClicks%2===0  && $(box).text() =="blank"){
+     if (numClicks<10 && numClicks%2===0  && $(box).text() =="blank"){
        $(box).text("X");
-     } else if(numClicks%2 ===1 && $(box).text()=="blank"){
+     } else if(numClicks<10 && numClicks%2 ===1 && $(box).text()=="blank"){
        $(box).text("O");
      }
 
@@ -70,5 +70,11 @@ var mark = function(numClicks,box){
      mark(numClicks,box);
    });
 
+   $("button").on("click",function reset(){
+     location.reload();
+
+
+
+   });
 
 });
