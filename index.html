@@ -6,17 +6,18 @@
     <!-- set viewport to device width to allow responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+
     <!-- Bootstrap CSS from CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- link to custom stylesheet (always require after Bootstrap) -->
     <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
-    <!-- jQuery from CDN -->
-
-
     <!-- link to custom javascript file (always require after external JS libraries) -->
 
     <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="/home/gabriela/wdi/tic-tac-toe-master/css/style.css">
   </head>
   <body>
     <div class="container">
@@ -35,15 +36,24 @@
           <!-- you can put rows inside of columns! -->
           <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
           <div class="row">
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
+            <div id="a" class="col-md-4 box">blank</div>
+            <div id="b" class="col-md-4 box">blank</div>
+            <div id="c" class="col-md-4 box">blank</div>
           </div>
-
-
+          <div class="row">
+            <div id = "d" class="col-md-4 box">blank</div>
+            <div id = "e" class="col-md-4 box">blank</div>
+            <div id = "f" class="col-md-4 box">blank</div>
+          </div>
+          <div class="row">
+            <div id="g" class="col-md-4 box">blank</div>
+            <div id="h" class="col-md-4 box">blank</div>
+            <div id="i" class="col-md-4 box">blank</div>
+          </div>
 
         </div>
       </div>
     </div>
+   <script type="text/javascript" src="/home/gabriela/wdi/tic-tac-toe-master/js/app.js"></script>
   </body>
 </html>
