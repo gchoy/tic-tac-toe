@@ -2,6 +2,9 @@
 $(document).ready(function() {
   // all code to manipulate the DOM
   // goes inside this function
+
+  //it looks like you are setting the box symbol but haven't checked for a winner yet.
+  //I bet you know how to do that now though with your expertise on logic
 var mark = function(numClicks,box){
      if (numClicks<10 && numClicks%2===0  && $(box).text() =="blank"){
        $(box).text("X");

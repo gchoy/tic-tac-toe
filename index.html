@@ -15,9 +15,14 @@
     <!-- link to custom stylesheet (always require after Bootstrap) -->
     <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
     <!-- link to custom javascript file (always require after external JS libraries) -->
+    <!-- moved your js file up here and fixed the path -->
+    <script type="text/javascript" src="js/app.js"></script>
 
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" type="text/css" href="/home/gabriela/wdi/tic-tac-toe-master/css/style.css">
+    <!--Help! you are referencing a file from your laptop explicitly so no one else can use your code :(
+    change it like so:
+     -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <div class="container">
@@ -55,6 +60,5 @@
       </div>
     </div>
     <button class="buttton" type="button">Reset</button>
-   <script type="text/javascript" src="/home/gabriela/wdi/tic-tac-toe-master/js/app.js"></script>
  </body>
 </html>
